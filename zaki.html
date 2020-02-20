@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="zaki.css">
+    <script src="jquery-3.4.1.min.js"></script>
+
+    <title>Form Builder</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class='header'>
+            <div class="left_btns">
+                <a href="/index.html">Home</a>
+                <button class="left_btn" onclick="save()">Save</button>
+                <span id="lastSaved"></span>
+            </div>
+
+            <div class="right_btns">
+                <button>Share</button>
+                <button>Download XML</button>
+            </div>
+        </div>
+        <h1 style="text-align: center;">Form Title</h1>
+
+
+
+        <div class="tabs">
+            <a href="#">Edit</a>
+            <a href="#">View Results</a>
+        </div>
+
+
+        <form>
+            <ol id="form" class='example'>
+            </ol>
+        </form>
+
+
+
+        <button type="button" class="collapsible">Section</button>
+        <div class="content">
+            <label>Title: </label>
+            <textarea id="sectionTitle" cols="40"></textarea><br>
+            <button onclick='section(document.getElementById("sectionTitle").value)'>Add</button>
+        </div>
+
+        <button type="button" class="collapsible">Text Answer</button>
+        <div class="content">
+            <label>Question: </label>
+            <textarea id="textQuestion" cols="40"></textarea><br>
+            <button onclick='textAnswer(document.getElementById("textQuestion").value)'>Add</button>
+        </div>
+
+        <button type="button" class="collapsible">Radio Answer</button>
+        <div class="content">
+            <label>Question: </label>
+            <textarea id="radioQuestion" cols="40"></textarea><br>
+            <label>Answers: </label>
+            <textarea id="radioAnswers" cols="40"></textarea><br>
+            <button
+                onclick='otherAnswer("radio", document.getElementById("radioQuestion").value, document.getElementById("radioAnswers").value)'>Add</button>
+        </div>
+
+        <button type="button" class="collapsible">Checkbox Answer</button>
+        <div class="content">
+            <label>Question: </label>
+            <textarea id="boxQuestion" cols="40"></textarea><br>
+            <label>Answers: </label>
+            <textarea id="boxAnswers" cols="40"></textarea><br>
+            <button
+                onclick='otherAnswer("checkbox", document.getElementById("boxQuestion").value, document.getElementById("boxAnswers").value)'>Add</button>
+        </div>
+
+
+
+    </div>
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"></script> -->
+    <script src="script.js"></script>
+    <script src="jquery-sortable-min.js"></script>
+</body>
+
+</html>

@@ -16,8 +16,8 @@ h1{
 	font-weight: normal;
 }
 
-button{
-	width: 100px;
+.header-buttons button{
+	width: 60px;
 	height: 40px;
 	border: none;
 }
@@ -25,6 +25,7 @@ button{
 
 .main-container{
 	width: 60vw;
+	max-width: 900px;
 	padding: 24px;
 	display: flex;
 	flex-direction: column;
