@@ -47,10 +47,12 @@
 
 			<form>
 
+				<div class="spacer"></div>
+
 				<ol id="form">
 
 					<h2>Question Views</h2>
-					<p>This is how the questions would show up once they are added to the form.</p>
+					<p>This is how each question type would appear once it is added to the form.</p>
 
 					<li class="question">
 						<div class="question-icons">
@@ -60,6 +62,17 @@
 						This is a text question.
 						<br>
 						<input type="text" class="text-answer" name="" disabled="" placeholder="Written Answer">
+						<br>
+						<div class="add-child">
+							<button class="child-btn">+</button>
+							<div class="child-menu">
+								<p>Add a child question</p>
+								<a><i class="fa fa-font"></i>Text</a><br>
+								<a><i class="far fa-dot-circle"></i>Single Select</a><br>
+								<a><i class="fa fa-check-square"></i>Multi Select</a><br>
+							</div>
+						</div>
+						
 					</li>
 					
 					<li class="question">
@@ -114,7 +127,7 @@
 
 
 					<h2>Add/Edit Views</h2>
-					<p>This is how each question type would look like when it's being added (bottom 3 buttons clicked) or edited (edit icon clicked on the question).</p>
+					<p>This is how each question type would look like when it's being added (one of the 3 buttons is clicked) or edited (edit icon on the question is clicked).</p>
 
 					<div class="edit white-bg">
 						<p><i class="fa fa-font"></i>TEXT QUESTION</p>
@@ -145,6 +158,96 @@
 						</div>
 					</div>
 
+
+					<div class="spacer"></div>
+
+					<h2>Add Child</h2>
+					<p>Adding a child question</p>
+
+					<li class="question">
+						<div class="question-icons">
+							<i id="edit" class="fa fa-pencil-alt"></i>
+							<i id="drag" class="fa fa-arrows-alt"></i>
+						</div>
+						This is a single select question.
+						<br>
+						<label>
+							<input type="radio" name="" disabled="">
+							Answer 1
+						</label>
+						<br>
+						<label> 
+							<input type="radio" class="single-select-answer" name="" disabled="">
+							Answer 2
+						</label>
+						<br>
+						<label> 
+							<input type="radio" class="single-select-answer" name="" disabled="">
+							Answer 3
+						</label>
+						<ol>
+							<li class="child question">
+								<div class="question-icons">
+									<i id="edit" class="fa fa-pencil-alt"></i>
+									<i id="drag" class="fa fa-arrows-alt"></i>
+								</div>
+								<p class="condition"><span>Condition:</span> Answer 1</p>
+								This is a text question.
+								<br>
+								<input type="text" class="text-answer" name="" disabled="" placeholder="Written Answer">
+							</li>
+
+
+							<li class="child question">
+								<div class="question-icons">
+									<i id="edit" class="fa fa-pencil-alt"></i>
+									<i id="drag" class="fa fa-arrows-alt"></i>
+								</div>
+								<p class="condition"><span>Condition:</span> Answer 1</p>
+								This is a multiselect question.
+								<br>
+								<label>
+									<input type="checkbox" name="" disabled="">
+									Answer 1
+								</label>
+								<br>
+								<label> 
+									<input type="checkbox" class="single-select-answer" name="" disabled="">
+									Answer 2
+								</label>
+								<br>
+								<label> 
+									<input type="checkbox" class="single-select-answer" name="" disabled="">
+									Answer 3
+								</label>
+							</li> 
+
+							<li class="child-edit edit blue-bg">
+								<p><i class="fa fa-check-square"></i>MULTI SELECT QUESTION</p>
+								<p>Show if answered: 
+									<select name="" id="">
+										<option value="">Select an option</option>
+										<option value="">Answer 1</option>
+										<option value="">Answer 2</option>
+										<option value="">Answer 3</option>
+									</select>
+								</p>
+								<input type="text" placeholder="Enter your question here">
+								<input type="text" placeholder="Enter your answers here">
+								<div class="edit-buttons">
+									<button class="outlined-btn">Delete</button>
+									<button class="solid-btn">Add</button>
+								</div>
+							</li>
+		
+		
+					</div>
+
+
+
+						</ol>
+					</li>
+
 				</ol>
 			</form>
 
@@ -163,69 +266,6 @@
 		</div>
 	
 	</div>
-
-
-
-		<!-- <div class="question-container">
-
-			
-			<h3>Questions</h3>
-
-	        <form>
-	            
-				<ol class="question">
-					<i class="material-icons drag">drag_indicator</i>
-					<li>This is Question 1</li>
-					<li>Q1. How do you do this specific procedure?</li>
-					<li>Some text here</li>
-				</ol>
-
-
-				<ol>
-					<i class="material-icons drag">drag_indicator</i>
-					<li>This is Question 2</li>
-					<li>How do you do this specific procedure?????</li>
-					<li>Some text here</li>
-					<li>
-						<ol>
-							<i class="material-icons drag">drag_indicator</i>
-							<li>This is a nested question</li>
-							<li>Some text here</li>
-							<li>Some more text</li>
-							<li>
-								<ol>
-									<i class="material-icons drag">drag_indicator</i>
-									<li>This is nest-ception</li>
-									<li>Text?</li>
-									<li>This is cool</li>
-								</ol>
-							</li>
-						</ol>
-					</li>
-				</ol>
-
-	        </form>
-
-
-
-
-		</div>
-	
-
-
-		<div class="form-buttons">
-			<h4>ADD QUESTIONS</h4>
-			<div>
-				<button class="button-outlined"><i class="fa fa-font"></i>Text</button>
-				<button class="button-outlined">Multi Select</button>
-				<button class="button-outlined">Single Select</button>
-			</div>
-		</div> -->
-
-
-
-
-		
 
 
     
