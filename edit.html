@@ -10,7 +10,18 @@
 	<link href="/assets/css/all.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 	<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-  	<!-- <script src="/js/jquery-3.4.1.min.js"></script> -->
+	  <!-- <script src="/js/jquery-3.4.1.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){
+  			$("button.child-btn").click(function(e){
+    			$(this).toggleClass("active");
+				$("div.child-menu").toggleClass("expand");
+				e.preventDefault();
+    		});
+		});
+
+	</script>
 
 </head>
 <body>
@@ -222,7 +233,7 @@
 								</label>
 							</li> 
 
-							<li class="child-edit edit blue-bg">
+							<li class="child edit blue-bg">
 								<p><i class="fa fa-check-square"></i>MULTI SELECT QUESTION</p>
 								<p>Show if answered: 
 									<select name="" id="">

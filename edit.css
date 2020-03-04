@@ -127,7 +127,8 @@ i{
 /* Add Child */
 
 .add-child{
-	background-color: lightcoral;
+	margin-top: 12px;
+	background-color: transparent;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -138,15 +139,23 @@ i{
 .child-btn{
 	height: 36px;
 	max-width: 36px;
-	border-radius: 18px;
+	border-radius: 20px;
 	background-color: white;
 	font-size: 18px;
 	color: black;
 	border: 1px solid #EFEFEF;
-	box-sizing: border-box;
 	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-	margin-top: 12px;
 	text-align: center;
+}
+
+
+.child-btn.active{
+	background-color: #3CB3E0;
+	color: white;
+	border: 1px solid #3CB3E0;
+	box-shadow: 0px 2px 4px #C7C7C7;
+	transform: rotate(45deg);
+	transition: 0.3s;
 }
 
 .child-btn:after{
@@ -154,7 +163,18 @@ i{
 	color: white;
 }
 
-.child-menu{	
+.child-btn:focus{
+	outline: none;
+}
+
+.child-menu{
+	display: none;
+	opacity: 0;
+}
+
+.child-menu.expand{	
+	opacity: 1;
+	display: inline;
 	position: relative;
 	margin-left: 16px;
 	padding: 8px;
@@ -165,6 +185,7 @@ i{
 	box-sizing: border-box;
 	box-shadow: 0px 2px 4px rgba(186, 186, 186, 0.25);
 	border-radius: 4px;
+	transition: 1s;
 }
 
 .child-menu p{
