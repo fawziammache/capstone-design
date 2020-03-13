@@ -6,9 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>View Results</title>
-        <link rel="stylesheet" type="text/css" href="edit.css">
+        <!-- <link rel="stylesheet" type="text/css" href="edit.css"> -->
+        <link rel="stylesheet" type="text/css" href="results.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
         <link href="/assets/css/all.css" rel="stylesheet">
+        <script src="scroll.js"> </script>
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
         <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
         <!-- <script src="/js/jquery-3.4.1.min.js"></script> -->
@@ -29,18 +31,134 @@
     
             <div class="right-buttons">
                 <button><i class="fa fa-share"></i>Share</button>
-                <button><i class="fa fa-download"></i>Download XML</button>
+                <button><i class="fa fa-code"></i>XML</button>
             </div>
         </header>
 
 
         <div class="main-container">
 
-
             <div class="tab">
               <button class="tablinks" onclick="">Edit Form</button>
               <button class="tablinks selected" onclick="">View Results</button>
             </div>
+
+            <div class="filters">
+                <select name="round" id="">
+                    <option value="">Select a round</option>
+                    <option value="">Round 1</option>
+                    <option value="">Round 2</option>
+                    <option value="">Round 3</option>
+                </select>
+
+                <select name="round" id="">
+                    <option value="">Select a participant</option>
+                    <option value="">All participants</option>
+                    <option value="">Dr. Dre</option>
+                    <option value="">Dr. Seuss</option>
+                    <option value="">Dr. Oz</option>
+                    <option value="">Dr. Phil</option>
+                </select>
+
+            </div>
+
+
+            <div class="results-container">
+
+                <table id="results-table">
+                    <thead>
+                        <th class="question-col">Question</th>
+                        <th>Clarity</th>
+                        <th>Relevance</th>
+                        <th>Overall</th>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            </td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>Include</td>
+                        </tr>
+
+                        <tr>
+                            <td>2. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            </td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>Optional</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>3. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            </td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>Do not include</td>
+                        </tr>
+
+                        <tr>
+                            <td>4. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            </td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>Do not include</td>
+                        </tr>
+
+                        <tr>
+                            <td>5. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            </td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>Do not include</td>
+                        </tr>
+
+                        <tr>
+                            <td>6. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            </td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>Do not include</td>
+                        </tr>
+
+                        <tr>
+                            <td>7. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            </td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>Do not include</td>
+                        </tr>
+
+                        <tr>
+                            <td>8. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            </td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>Do not include</td>
+                        </tr>
+
+
+
+
+
+
+                    </tbody>
+                </table>
+
+
+            </div>
+
+
 
 
         </div>
